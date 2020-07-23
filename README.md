@@ -12,7 +12,7 @@ Overview of changes:
 * Language core changes like translate
 * Occasional Python3 syntax helper comments
 
-Software version numbers (2015-09-04):
+Software version numbers (2020-07-23):
 
 * Python: 3.7.5
 * GCC: 4.9.2
