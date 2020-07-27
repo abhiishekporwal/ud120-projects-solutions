@@ -20,14 +20,14 @@ bumpy_slow = [features_train[ii][1] for ii in range(0, len(features_train)) if l
 
 
 #### initial visualization
-# plt.xlim(0.0, 1.0)
-# plt.ylim(0.0, 1.0)
-# plt.scatter(bumpy_fast, grade_fast, color = "b", label="fast")
-# plt.scatter(grade_slow, bumpy_slow, color = "r", label="slow")
-# plt.legend()
-# plt.xlabel("bumpiness")
-# plt.ylabel("grade")
-# plt.show()
+plt.xlim(0.0, 1.0)
+plt.ylim(0.0, 1.0)
+plt.scatter(bumpy_fast, grade_fast, color = "b", label="fast")
+plt.scatter(grade_slow, bumpy_slow, color = "r", label="slow")
+plt.legend()
+plt.xlabel("bumpiness")
+plt.ylabel("grade")
+plt.show()
 #################################################################################
 
 
@@ -35,7 +35,7 @@ bumpy_slow = [features_train[ii][1] for ii in range(0, len(features_train)) if l
 ### visualization code (prettyPicture) to show you the decision boundary
 
 #KNN
-clf_knn = KNeighborsClassifier(n_neighbors=4)
+clf_knn = KNeighborsClassifier(n_neighbors=4, metric= 'euclidean')
 clf_knn.fit(features_train, labels_train)
 pred_knn = clf_knn.predict(features_test)
 acc_knn = accuracy_score(pred_knn, labels_test)
