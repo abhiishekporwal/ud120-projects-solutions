@@ -33,12 +33,15 @@ bumpy_slow = [features_train[ii][1] for ii in range(0, len(features_train)) if l
 
 ### your code here!  name your classifier object clf if you want the 
 ### visualization code (prettyPicture) to show you the decision boundary
+
+#KNN
 clf_knn = KNeighborsClassifier(n_neighbors=4)
 clf_knn.fit(features_train, labels_train)
 pred_knn = clf_knn.predict(features_test)
 acc_knn = accuracy_score(pred_knn, labels_test)
 print('accuracy for KNeighborsClassifier: ', acc_knn)
 
+#AdaBoost
 clf_adaboost  = AdaBoostClassifier(n_estimators = 10, random_state = 0)
 clf_adaboost.fit(features_train, labels_train)
 pred_adaboost = clf_adaboost.predict(features_test)
@@ -46,7 +49,7 @@ acc_adaboost = accuracy_score(pred_adaboost, labels_test)
 print('accuracy for AdaBoostClassifier: ', acc_adaboost)
 
 
-
+#RandomForest
 clf_rfc  = RandomForestClassifier(n_estimators = 15, random_state = 0)
 clf_rfc.fit(features_train, labels_train)
 pred_rfc = clf_rfc.predict(features_test)
