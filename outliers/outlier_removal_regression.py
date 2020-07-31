@@ -30,8 +30,8 @@ from sklearn.linear_model import LinearRegression
 reg = LinearRegression().fit(ages_train, net_worths_train)
 print('Regression slope: ', reg.coef_)
 # print('Regession intercept: ', reg.intercept_)
-print('Regression score: ', reg.score(ages_train, net_worths_train))
-# print('Regression score: ', reg.score(ages_test, net_worths_test))
+# print('Regression score: ', reg.score(ages_train, net_worths_train))
+print('Regression score: ', reg.score(ages_test, net_worths_test))
 
 
 

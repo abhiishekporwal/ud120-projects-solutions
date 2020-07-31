@@ -16,7 +16,8 @@ def parseOutText(f):
         
         """
 
-    stemmer = SnowballStemmer("english", ignore_stopwords=True)
+    #stemmer = SnowballStemmer("english", ignore_stopwords=True)                      # to ignore stopwords
+    stemmer = SnowballStemmer("english")
     f.seek(0)  ### go back to beginning of file (annoying)
     all_text = f.read()
 
