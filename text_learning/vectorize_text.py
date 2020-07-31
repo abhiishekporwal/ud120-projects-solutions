@@ -42,11 +42,11 @@ for name, from_person in [("sara", from_sara), ("chris", from_chris)]:
         ### once everything is working, remove this line to run over full dataset
         # temp_counter += 1
         # if temp_counter < 200:
-        path = os.path.join('..', path[:-1])
+        path = os.path.join('../../../Desktop/', path[:-1])         #####################################change as per ur maildir folder(mine is extracted on Desktop)
         print(path)
         email = open(path, "r")
         str = parseOutText(email)
-        for word in ["sara", "shackleton", "chris", "germani"]: 
+        for word in ["sara", "shackleton", "chris", "germani","sshacklensf", "cgermannsf"]: 
             str = str.replace(word,'')
         word_data.append(str)
         if name=='sara':
