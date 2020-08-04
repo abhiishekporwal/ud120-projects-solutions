@@ -1,11 +1,11 @@
-ud120-projects
-==============
+ud120-projects-solution (in progress)
+====================================
 
 Starter project code for students taking Udacity ud120 (updated to Python3)
 
 Overview of changes:
 
-* Shabangs changed to python3
+* Shebangs changed to python3
 * Parentheses around print statements
 * Pickle files opened in binary mode for read/write
 * Library updates like urllib and cPickle
