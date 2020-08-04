@@ -1,11 +1,11 @@
-ud120-projects solutions and updated python3 libraries (in progress)
-======================================================
+ud120-projects
+==============
 
-Starter project code for students taking Udacity ud120 (updated to Python3 )
+Starter project code for students taking Udacity ud120 (updated to Python3)
 
 Overview of changes:
 
-* Shebang changed to python3
+* Shabangs changed to python3
 * Parentheses around print statements
 * Pickle files opened in binary mode for read/write
 * Library updates like urllib and cPickle
@@ -20,3 +20,8 @@ Software version numbers (2020-07-23):
 * nltk: 3.5.
 * numpy: 1.18.5.
 * matplotlib: 3.2.2.
+
+Note: One file is also required for the completion of this course which contains mails from enron dataset, folder named as 'maildir' which can be downloaded by running startup.py
+
+Also, if anyone get stuck somewhere they can take help from the solution repo provided:
+https://github.com/abhiishekporwal/ud120-projects-solutions
