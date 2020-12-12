@@ -31,8 +31,8 @@ print(count)
 total_poi = 0
 with open('../final_project/poi_names.txt', 'r') as file:
 	for line in file:
-		if('\(y\)' or '\(n\)' in line):
-			total_poi= total_poi+1
+		if( (line.find('(y)') != -1) or (line.find('(n)') != -1)):
+            		total_poi += 1
 print(total_poi)
 file.close()
 print("Stock value of James Prentice: ", enron_data['PRENTICE JAMES']['total_stock_value'])
